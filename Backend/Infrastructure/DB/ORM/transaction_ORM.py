@@ -12,7 +12,7 @@ class Money:
     amount: int
     currency: str
 
-class document_ORM(Base):
+class transaction_ORM(Base):
     __tablename__ = "document"
 
     id: Mapped[str] = mapped_column(primary_key=True)
