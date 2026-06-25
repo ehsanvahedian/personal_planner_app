@@ -8,8 +8,8 @@ class task_ORM(Base):
 
     id: Mapped[int] = mapped_column(primary_key=True, autoincrement=True)
     task_txt: Mapped[str]
-    description: Mapped[str]
+    description: Mapped[str] = mapped_column(nullable=True)
     created_at: Mapped[datetime]
-    due_time: Mapped[datetime]
-    completed: Mapped[bool]
-    priority: Mapped[int]
+    due_time: Mapped[datetime] = mapped_column(nullable=True)
+    completed: Mapped[bool] = mapped_column(nullable=True)
+    priority: Mapped[int] = mapped_column(nullable=True)

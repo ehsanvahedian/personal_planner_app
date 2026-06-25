@@ -11,7 +11,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
-from Infrastructure.DB.ORM import task_ORM
+from Infrastructure.DB.ORM import task_ORM, document_ORM, transaction_ORM
 from Infrastructure.DB.ORM.Base import Base
 target_metadata = Base.metadata
 

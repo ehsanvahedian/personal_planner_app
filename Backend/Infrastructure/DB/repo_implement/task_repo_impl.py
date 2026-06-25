@@ -88,28 +88,28 @@ class task_repo_impl(task_repository):
                 "message": str(e)
             }
 
-def list_tasks(self):
-    try:
-        pending = (
-            self.session.query(task_ORM)
-            .filter(task_ORM.completed == False)
-            .all()
-        )
+    def list_tasks(self):
+        try:
+            pending = (
+                self.session.query(task_ORM)
+                .filter(task_ORM.completed == False)
+                .all()
+            )
 
-        completed = (
-            self.session.query(task_ORM)
-            .filter(task_ORM.completed == True)
-            .all()
-        )
+            completed = (
+                self.session.query(task_ORM)
+                .filter(task_ORM.completed == True)
+                .all()
+            )
 
-        return {
-            "status": "success",
-            "pending": pending,
-            "completed": completed
-        }
+            return {
+                "status": "success",
+                "pending": pending,
+                "completed": completed
+            }
 
-    except Exception as e:
-        return {
-            "status": "failure",
-            "message": str(e)
-        }
+        except Exception as e:
+            return {
+                "status": "failure",
+                "message": str(e)
+            }
