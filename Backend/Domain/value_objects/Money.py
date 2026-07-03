@@ -2,8 +2,8 @@ from dataclasses import dataclass
 
 @dataclass
 class Money:
-    amount: int
-    currency: str
+    amount: int | None
+    currency: str | None
 
     def add(self, amount):
         self.amount += amount
@@ -13,3 +13,9 @@ class Money:
 
     def is_positive(self):
         return True if self.amount > 0 else False
+    
+    def to_dict(self):
+        return {
+            "amount": self.amount,
+            "currency": self.currency,
+        }

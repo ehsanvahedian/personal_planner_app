@@ -21,7 +21,7 @@ class transaction_repository(ABC):
     def list_expenses(self): ...
 
 
-    def biuld_transaction(self, transaction_data: transaction_entity) -> transaction_entity:
+    def build_transaction(self, transaction_data: transaction_entity) -> transaction_entity:
         return transaction_entity(**transaction_data.__dict__)
     
     #You can add list by date

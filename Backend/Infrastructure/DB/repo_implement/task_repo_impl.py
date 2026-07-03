@@ -74,7 +74,7 @@ class task_repo_impl(task_repository):
                 "message": str(e)
             }
 
-    def get_task(self, id):
+    def get_task(self, id) -> task_ORM | None:
         try:
             return (
                 self.session.query(task_ORM)

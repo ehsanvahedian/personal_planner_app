@@ -21,7 +21,11 @@ class taskUseCases:
 
 
     def markTaskCompleteUseCase(self, id: int):
-        return self.implement.build_task(self.implement.get_task(id))
+        task = self.implement.get_task(id).to_entity()
 
+        task.mark_complete()
+
+        return self.implement.update_task(task)
+    
     def listTasksUseCase(self): #we can get how to list: By status By date By priority
         return self.implement.list_tasks()

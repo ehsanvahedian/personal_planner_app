@@ -1,8 +1,7 @@
-from fastapi import APIRouter
-from fastapi import Depends
+from fastapi import APIRouter, Depends, Body
 
 from Application.UseCases.transactionUseCases import transactionUseCases
-from ..pydantic_models.transaction_pydantic import transaction_pydantic
+from ..pydantic_models.transaction_pydantic import transaction_pydantic, transaction_pydantic_input
 from typing import Annotated
 
 router = APIRouter(
@@ -14,14 +13,17 @@ TUC = transactionUseCases()
 
 @router.post("/add")
 async def add_transaction(
-    data: Annotated[transaction_pydantic, Depends(transaction_pydantic)]
+    input_data: Annotated[transaction_pydantic_input, Depends(transaction_pydantic_input)]
 ):
+    input_data.fix_amount()
+    data = input_data
     return TUC.createTransactionUseCase(data)
 
 @router.put("/update")
 async def update_transaction(
     data: Annotated[transaction_pydantic, Depends(transaction_pydantic)]
 ):
+    data.fix_amount()
     return TUC.updateTransactionUseCase(data)
 
 @router.delete("/{id}")

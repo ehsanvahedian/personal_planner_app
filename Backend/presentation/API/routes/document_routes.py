@@ -2,7 +2,7 @@ from fastapi.routing import APIRouter
 from fastapi import Depends
 
 from Application.UseCases.documentUseCases import documentUseCases
-from ..pydantic_models.document_pydantic import document_pydantic
+from ..pydantic_models.document_pydantic import document_pydantic, document_pydantic_input
 from typing import Annotated
 
 
@@ -25,12 +25,12 @@ async def get_document(id: int):
 
 
 @router.post("/add")
-async def add_document(data: document_pydantic):
+async def add_document(data: Annotated[document_pydantic_input, Depends(document_pydantic_input)]):
     return DUC.createDocumentUseCase(data)
 
 
 @router.put("/update")
-async def update_document(data: document_pydantic):
+async def update_document(data: Annotated[document_pydantic, Depends(document_pydantic)]):
     return DUC.updateDocumentUseCase(data)
 
 

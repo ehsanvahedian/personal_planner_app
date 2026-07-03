@@ -15,6 +15,6 @@ class document_repository(ABC):
     def list_documents(self): ...
 
 
-    def biuld_document(self, document_data):
+    def build_document(self, document_data):
         return document_entity(**document_data.__dict__)
 

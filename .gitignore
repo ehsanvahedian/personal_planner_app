@@ -1,6 +1,3 @@
-Backend/Infrastructure/DB/repo_implement/__pycache__/task_repo_impl.cpython-314.pyc
-Backend/alembic
-Backend/alembic.ini
 Backend/.env
 *.pyc
 **/__pycache__

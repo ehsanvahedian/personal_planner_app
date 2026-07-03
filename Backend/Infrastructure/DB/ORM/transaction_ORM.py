@@ -3,27 +3,38 @@ from .Base import Base
 from sqlalchemy.orm import mapped_column, Mapped
 from datetime import datetime
 from enum import Enum
+from Domain.value_objects.Money import Money
+from Domain.value_objects.transaction_type import TransactionType
 
 
-class TransactionType(Enum):
-    EXPENSE = "expense"
-    INCOME = "income"
+class MoneyType(TypeDecorator):
+    impl = JSON
+    cache_ok = True
 
-class Money:
-    amount: int
-    currency: str
+    def process_bind_param(self, value, dialect):
+        if value is None:
+            return None
 
-    def __dict__(self):
-        return {"amount": self.amount, "currency": self.currency}
+        return {
+            "amount": value.amount,
+            "currency": value.currency
+        }
 
+    def process_result_value(self, value, dialect):
+        if value is None:
+            return None
 
+        return Money(
+            amount=value["amount"],
+            currency=value["currency"]
+        )
 
 class transaction_ORM(Base):
     __tablename__ = "transactions"
 
-    id: Mapped[str] = mapped_column(primary_key=True)
-    title: Mapped[str]
-    amount: Mapped[dict] = mapped_column(JSON)
+    id: Mapped[int] = mapped_column(primary_key=True, autoincrement=True)
+    title: Mapped[str] = mapped_column(nullable=True)
+    amount: Mapped[Money] = mapped_column(MoneyType())
     type: Mapped[TransactionType]
     source: Mapped[str] = mapped_column(nullable=True)
     date: Mapped[datetime]

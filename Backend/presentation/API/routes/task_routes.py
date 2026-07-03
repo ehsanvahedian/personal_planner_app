@@ -2,7 +2,7 @@ from fastapi.routing import APIRouter
 from fastapi import Depends
 
 from Application.UseCases.taskUseCases import taskUseCases
-from ..pydantic_models.task_pydanic import task_pydantic
+from ..pydantic_models.task_pydanic import task_pydantic, task_pydantic_input
 from typing import Annotated
 
 router = APIRouter(
@@ -17,7 +17,7 @@ async def get_tasks():
     return TUC.listTasksUseCase()
 
 @router.post("/add")
-async def get_tasks(data: Annotated[task_pydantic, Depends(task_pydantic)]):
+async def get_tasks(data: Annotated[task_pydantic_input, Depends(task_pydantic_input)]):
     return TUC.createTaskUseCase(data)
 
 @router.put("/update")
