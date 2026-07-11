@@ -1,4 +1,4 @@
-from ..ORM.transaction_ORM import TransactionType, transaction_ORM
+from ..ORM.transaction_ORM import TransactionType, transaction_ORM, transactions_list
 from Domain.repository.transaction_repository import transaction_repository
 
 
@@ -100,34 +100,32 @@ class transaction_repo_impl(transaction_repository):
                 "message": str(e)
             }
 
-    def list_expenses(self):
+    def list_expenses(self) -> transactions_list:
         try:
-            return (
-                self.session.query(transaction_ORM)
-                .filter(
+
+            expenses : list[transaction_ORM] = self.session.query(transaction_ORM).filter(
                     transaction_ORM.type == TransactionType.EXPENSE
-                )
-                .all()
+                ).all()
+            
+            return transactions_list(
+                "success",
+                list(map(lambda i: i.to_entity(), expenses))
             )
 
         except Exception as e:
-            return {
-                "status": "failure",
-                "message": str(e)
-            }
+            return transactions_list("failure", str(e))
 
-    def list_incomes(self):
+    def list_incomes(self) -> transactions_list:
         try:
-            return (
-                self.session.query(transaction_ORM)
-                .filter(
+
+            expenses : list[transaction_ORM] = self.session.query(transaction_ORM).filter(
                     transaction_ORM.type == TransactionType.INCOME
-                )
-                .all()
+                ).all()
+            
+            return transactions_list(
+                "success",
+                list(map(lambda i: i.to_entity(), expenses))
             )
 
         except Exception as e:
-            return {
-                "status": "failure",
-                "message": str(e)
-            }
+            return transactions_list("failure", str(e))

@@ -1,5 +1,5 @@
 from Domain.repository.document_repository import document_repository
-from ..ORM.document_ORM import document_ORM
+from ..ORM.document_ORM import document_ORM, documents_list
 
 
 class document_repo_impl(document_repository):
@@ -76,11 +76,9 @@ class document_repo_impl(document_repository):
 
     def get_document(self, id):
         try:
-            return (
-                self.session.query(document_ORM)
-                .filter(document_ORM.id == id)
-                .first()
-            )
+            
+            document: document_ORM = self.session.query(document_ORM).filter(document_ORM.id == id).first()
+            return document.to_entity()
 
         except Exception as e:
             return {
@@ -88,17 +86,11 @@ class document_repo_impl(document_repository):
                 "message": str(e)
             }
 
-    def list_documents(self):
+    def list_documents(self) -> documents_list:
         try:
-            docs = self.session.query(document_ORM).all()
-
-            return {
-                "status": "success",
-                "data": docs
-            }
+            docs: list[document_ORM] = self.session.query(document_ORM).all()
+            docs = list(map(lambda doc: doc.to_entity(), docs))
+            return documents_list("success", docs)
 
         except Exception as e:
-            return {
-                "status": "failure",
-                "message": str(e)
-            }
+            return documents_list("failure", str(e))

@@ -1,41 +1,17 @@
-from sqlalchemy import TypeDecorator, JSON
 from .Base import Base
+from dataclasses import dataclass
 from sqlalchemy.orm import mapped_column, Mapped
 from datetime import datetime
-from enum import Enum
 from Domain.Entity.transaction_entity import transaction_entity
-from Domain.value_objects.Money import Money
 from Domain.value_objects.transaction_type import TransactionType
 
-
-class MoneyType(TypeDecorator):
-    impl = JSON
-    cache_ok = True
-
-    def process_bind_param(self, value, dialect):
-        if value is None:
-            return None
-
-        return {
-            "amount": value.amount,
-            "currency": value.currency
-        }
-
-    def process_result_value(self, value, dialect):
-        if value is None:
-            return None
-
-        return Money(
-            amount=value["amount"],
-            currency=value["currency"]
-        )
 
 class transaction_ORM(Base):
     __tablename__ = "transactions"
 
     id: Mapped[int] = mapped_column(primary_key=True, autoincrement=True)
     title: Mapped[str] = mapped_column(nullable=True)
-    amount: Mapped[Money] = mapped_column(MoneyType())
+    amount: Mapped[int]
     type: Mapped[TransactionType]
     source: Mapped[str] = mapped_column(nullable=True)
     date: Mapped[datetime]
@@ -51,3 +27,9 @@ class transaction_ORM(Base):
             description=self.description,
             id=self.id
         )
+    
+@dataclass 
+class transactions_list:
+    status: str
+    transactions: list[transaction_entity] = None
+    message: str = None

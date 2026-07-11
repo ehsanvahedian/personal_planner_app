@@ -6,6 +6,14 @@ from typing import Annotated
 TUC = taskUseCases()
 task_app = typer.Typer()
 
+# return help while execute task_app
+@task_app.callback(invoke_without_command=True)
+def main(ctx: typer.Context):
+    if ctx.invoked_subcommand is None:
+        print(ctx.get_help())
+        raise typer.Exit()
+    
+
 @task_app.command()
 def add(
         title: Annotated[str, typer.Argument()] = None,
@@ -41,3 +49,60 @@ def add(
 
     except Exception as e:
         print("error: ", str(e))
+
+
+
+
+@task_app.command()
+def completed(
+    id: Annotated[int, typer.Argument()]
+):
+    """completed 'id'"""
+    try:
+        res = TUC.markTaskCompleteUseCase(id)
+
+        if res["status"] == "success":
+            print("You've done the task.")
+            return
+        print("no task with this id")
+        
+    except Exception as e:
+        print("Error: ", str(e))
+
+
+@task_app.command()
+def get():
+    """This will list tasks."""
+    try:
+        tasks = TUC.listTasksUseCase()
+
+        if not task.ducuments:
+            print("No task added")
+            return
+        
+        for task in tasks.pending:
+            print(f"id: {task.id}: {task.task_txt}, {task.description}, status: 🔲, till: {task.due_time}")
+        for task in tasks.completed:
+            print(f"id: {task.id}: {task.task_txt}, {task.description}, status: ✔️, till: {task.due_time}")
+    except Exception as e:
+        print("Error: ", str(e))
+
+        
+@task_app.command()
+def delete(
+    id: Annotated[int, typer.Argument()]
+):
+    """delete 'id'"""
+    confirm =typer.confirm("Are you sure you want to delete task? ", default=True)
+    try:
+        if confirm:
+            res = TUC.deleteTaskUseCase(id)
+
+            if res["status"] == "success":
+                print("task deleted")
+                return
+            
+            print("no task with this id")
+
+    except Exception as e:
+        print("Error: ", str(e))

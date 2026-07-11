@@ -1,6 +1,6 @@
 from dataclasses import dataclass, field, replace
 from datetime import datetime
-from Domain.value_objects.Money import Money
+
 from enum import Enum
 
 
@@ -11,7 +11,7 @@ class TransactionType(Enum):
 @dataclass
 class transaction_entity:
     title: str
-    amount: Money
+    amount: int
     type: TransactionType
     source: str
     date: datetime

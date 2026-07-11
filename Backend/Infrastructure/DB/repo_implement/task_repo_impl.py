@@ -1,5 +1,5 @@
 from Domain.repository.task_repository import task_repository
-from ..ORM.task_ORM import task_ORM
+from ..ORM.task_ORM import task_ORM, tasks_list
 
 
 class task_repo_impl(task_repository):
@@ -88,28 +88,21 @@ class task_repo_impl(task_repository):
                 "message": str(e)
             }
 
-    def list_tasks(self):
+    def list_tasks(self) -> tasks_list:
         try:
-            pending = (
+            pending : task_ORM = (
                 self.session.query(task_ORM)
                 .filter(task_ORM.completed == False)
                 .all()
             )
 
-            completed = (
+            completed : list[task_ORM] = (
                 self.session.query(task_ORM)
                 .filter(task_ORM.completed == True)
                 .all()
             )
 
-            return {
-                "status": "success",
-                "pending": pending,
-                "completed": completed
-            }
+            return tasks_list("success", "",list(map(lambda x: x.to_entity(), pending)), list(map(lambda x: x.to_entity(), completed)))
 
         except Exception as e:
-            return {
-                "status": "failure",
-                "message": str(e)
-            }
+            return tasks_list("failure", str(e))

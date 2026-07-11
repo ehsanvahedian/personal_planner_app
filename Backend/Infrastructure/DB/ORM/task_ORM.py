@@ -2,6 +2,8 @@ from sqlalchemy.orm import mapped_column, Mapped
 from datetime import datetime
 from .Base import Base
 from Domain.Entity.task_entity import task_entity
+from dataclasses import dataclass, field
+
 
 class task_ORM(Base):
     __tablename__ = "tasks"
@@ -25,3 +27,11 @@ class task_ORM(Base):
             completed=self.completed,
             priority=self.priority,
         )
+    
+
+@dataclass
+class tasks_list:
+    status: str
+    message: str | None = field(default=None)
+    pending: list[task_entity] | None = field(default=None)
+    completed: list[task_entity] | None = field(default=None)

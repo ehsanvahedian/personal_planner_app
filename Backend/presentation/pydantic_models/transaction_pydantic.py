@@ -2,14 +2,10 @@ from pydantic import BaseModel, Field
 from datetime import datetime
 from typing import Union
 from Domain.value_objects.transaction_type import TransactionType
-from Domain.value_objects.Money import Money
-
 
 class transaction_pydantic_input(BaseModel):
 
     amount: int
-
-    currency: str
 
     type: TransactionType
 
@@ -21,21 +17,11 @@ class transaction_pydantic_input(BaseModel):
 
     description: Union[str | None] = None
 
-    def fix_amount(self):
-        self.amount= Money(
-            amount=self.amount,
-            currency=self.currency
-        )
-        self.currency = None
-        delattr(self, 'currency')
-
 
 class transaction_pydantic(BaseModel):
     id: int
 
     amount: int
-    
-    currency: str
 
     type: Union[TransactionType | None] = None
 
@@ -46,11 +32,3 @@ class transaction_pydantic(BaseModel):
     date: Union[datetime | None] = None
 
     description: Union[str | None] = None
-
-    def fix_amount(self):
-        self.amount= Money(
-            amount=self.amount,
-            currency=self.currency
-        )
-        self.currency = None
-        delattr(self, 'currency')

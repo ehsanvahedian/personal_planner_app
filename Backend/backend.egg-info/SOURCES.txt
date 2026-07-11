@@ -33,6 +33,7 @@ Shared/database.py
 alembic/env.py
 alembic/versions/1244a716a46a_nunable_true_for_transaction_task_col.py
 alembic/versions/71cdb407cb81_table_added.py
+alembic/versions/e0d607510055_currency_deleted_amount_changed_to_.py
 backend.egg-info/PKG-INFO
 backend.egg-info/SOURCES.txt
 backend.egg-info/dependency_links.txt
@@ -50,6 +51,7 @@ presentation/API/routes/transaction_routes.py
 presentation/CLI/__init__.py
 presentation/CLI/main.py
 presentation/CLI/commands/__init__.py
+presentation/CLI/commands/document_commands.py
 presentation/CLI/commands/task_commands.py
 presentation/CLI/commands/transaction_commands.py
 presentation/pydantic_models/__init__.py

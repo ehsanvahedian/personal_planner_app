@@ -13,6 +13,7 @@ dependencies = [
     "python-dotenv>=1.0.0",
     "pydantic>=2.13.4",
     "typer>=0.26.8",
+    "prompt-toolkit>=3.0.52",
 ]
 
 [project.scripts]

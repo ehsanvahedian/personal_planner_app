@@ -2,6 +2,7 @@ from .Base import Base
 from sqlalchemy.orm import mapped_column, Mapped
 from datetime import datetime
 from Domain.Entity.document_entity import document_entity
+from dataclasses import dataclass
 class document_ORM(Base):
     __tablename__ = "documents"
 
@@ -22,3 +23,9 @@ class document_ORM(Base):
             updated_at=self.updated_at,
             id=self.id
         )
+    
+@dataclass 
+class documents_list:
+    status: str
+    ducuments: list[document_entity] = None
+    message: str = None

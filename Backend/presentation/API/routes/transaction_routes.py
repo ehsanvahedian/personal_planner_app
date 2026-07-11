@@ -15,7 +15,6 @@ TUC = transactionUseCases()
 async def add_transaction(
     input_data: Annotated[transaction_pydantic_input, Depends(transaction_pydantic_input)]
 ):
-    input_data.fix_amount()
     data = input_data
     return TUC.createTransactionUseCase(data)
 
@@ -23,7 +22,6 @@ async def add_transaction(
 async def update_transaction(
     data: Annotated[transaction_pydantic, Depends(transaction_pydantic)]
 ):
-    data.fix_amount()
     return TUC.updateTransactionUseCase(data)
 
 @router.delete("/{id}")
