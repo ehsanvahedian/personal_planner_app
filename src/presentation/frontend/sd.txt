@@ -1,0 +1,755 @@
+# HABER — Product Vision & Functional Overview
+
+## Product Overview
+
+HABER is an AI-native personal finance platform designed to become the central operating system for an individual's financial life. Rather than functioning as a traditional expense tracker, budgeting application, or banking dashboard, HABER is built as an intelligent financial workspace where users can understand, organize, optimize, and automate every aspect of their finances.
+
+The product is intended for everyday individuals, professionals, freelancers, students, families, entrepreneurs, and eventually businesses that want complete visibility over their financial behavior while benefiting from intelligent AI-powered assistance.
+
+The long-term vision is to transform financial management from a manual process into an autonomous collaboration between the user and AI.
+
+---
+
+# Core Philosophy
+
+Most finance applications only record what happened.
+
+HABER explains why it happened.
+
+More importantly, it helps users decide what should happen next.
+
+Instead of presenting numbers, charts, and reports that users must interpret themselves, the platform continuously analyzes financial behavior and proactively provides actionable recommendations.
+
+The application should feel less like accounting software and more like an intelligent financial partner.
+
+---
+
+# Product Goals
+
+The primary objectives of HABER are:
+
+• Give users complete visibility into their financial life.
+
+• Help users develop healthier financial habits.
+
+• Reduce unnecessary spending.
+
+• Increase savings.
+
+• Simplify financial organization.
+
+• Eliminate repetitive manual financial work.
+
+• Provide personalized AI-driven recommendations.
+
+• Become increasingly autonomous over time.
+
+Ultimately, users should spend less time managing money while making better financial decisions.
+
+---
+
+# User Experience Philosophy
+
+The interface should feel calm, premium, and trustworthy.
+
+Finance is often stressful.
+
+The product should reduce anxiety rather than increase it.
+
+Every interaction should feel predictable, elegant, and effortless.
+
+Complex financial information should be translated into simple visual insights.
+
+The product should never overwhelm users with excessive data.
+
+Instead, it should surface the most relevant information at the right time.
+
+Navigation should remain intuitive regardless of how many advanced features are added in future versions.
+
+Every workflow should require the minimum possible number of actions.
+
+---
+
+# Core Product Modules
+
+## Dashboard
+
+The dashboard acts as the user's financial command center.
+
+Instead of simply displaying widgets, it should immediately answer questions such as:
+
+How am I doing financially today?
+
+What changed since yesterday?
+
+What requires my attention?
+
+Am I on budget?
+
+Are there unusual transactions?
+
+Did my spending habits improve?
+
+What goals are progressing?
+
+What recommendations does AI have?
+
+The dashboard should adapt based on user behavior, making frequently used information more prominent over time.
+
+---
+
+## Transactions
+
+Transactions form the foundation of the entire platform.
+
+Users should be able to manage every financial event effortlessly.
+
+Supported functionality includes:
+
+Income
+
+Expenses
+
+Transfers
+
+Recurring transactions
+
+Scheduled transactions
+
+Attachments
+
+Receipts
+
+Notes
+
+Categories
+
+Tags
+
+Custom metadata
+
+Search
+
+Filtering
+
+Bulk editing
+
+Import
+
+Export
+
+History
+
+Future versions should automatically categorize transactions using AI.
+
+---
+
+## Accounts
+
+Users may own multiple financial accounts.
+
+Examples include:
+
+Cash
+
+Checking accounts
+
+Savings accounts
+
+Credit cards
+
+Digital wallets
+
+Investment accounts
+
+Business accounts
+
+Shared family accounts
+
+The platform should provide a unified financial view regardless of where money is stored.
+
+---
+
+## Categories
+
+Categories should remain flexible.
+
+Users should be able to:
+
+Create custom categories.
+
+Organize categories hierarchically.
+
+Assign colors and icons.
+
+Create budgeting rules.
+
+Track category performance over time.
+
+---
+
+## Budgets
+
+Budgeting is not merely about setting spending limits.
+
+The system should continuously evaluate budget health.
+
+Users should instantly understand:
+
+How much remains.
+
+How much has been spent.
+
+Whether they are ahead or behind schedule.
+
+How current behavior affects long-term goals.
+
+AI should recommend realistic budget adjustments based on historical spending patterns.
+
+---
+
+## Financial Goals
+
+Users should be able to define long-term objectives.
+
+Examples include:
+
+Emergency fund
+
+Vacation
+
+Buying a home
+
+Buying a car
+
+Debt repayment
+
+Education
+
+Retirement
+
+Custom goals
+
+Each goal should display projected completion dates based on current financial behavior.
+
+The AI should recommend strategies for reaching goals faster.
+
+---
+
+## Analytics
+
+Analytics should prioritize clarity rather than complexity.
+
+The objective is not producing more charts.
+
+The objective is producing better understanding.
+
+Examples include:
+
+Cash flow analysis
+
+Income trends
+
+Expense trends
+
+Spending categories
+
+Monthly comparisons
+
+Yearly comparisons
+
+Net worth
+
+Financial health score
+
+Savings rate
+
+Recurring payment analysis
+
+Subscription analysis
+
+Forecasting
+
+Behavior trends
+
+Seasonality
+
+Lifestyle changes
+
+AI-generated summaries should accompany every major chart.
+
+---
+
+# Artificial Intelligence
+
+AI is not an additional feature.
+
+AI is the foundation of the product.
+
+Every major module should benefit from intelligent assistance.
+
+Examples include:
+
+Automatic categorization
+
+Natural language financial search
+
+Personalized recommendations
+
+Budget optimization
+
+Behavior analysis
+
+Financial explanations
+
+Risk detection
+
+Subscription recommendations
+
+Duplicate detection
+
+Anomaly detection
+
+Future expense prediction
+
+Cash flow forecasting
+
+Financial summaries
+
+The AI should communicate naturally rather than sounding robotic.
+
+It should explain recommendations clearly and transparently.
+
+---
+
+# AI Chat Workspace
+
+Users should have access to a dedicated conversational interface.
+
+Unlike generic chatbots, the assistant has complete context about the user's financial data.
+
+Users should ask questions such as:
+
+"Where did I spend the most money this month?"
+
+"How much did I save compared to last year?"
+
+"Can I afford this purchase?"
+
+"What subscriptions should I cancel?"
+
+"What happens if I increase my savings by 15%?"
+
+The assistant should respond using charts, tables, explanations, forecasts, and actionable recommendations.
+
+---
+
+# AI Agents
+
+This is one of HABER's long-term differentiators.
+
+Instead of requiring users to manually perform repetitive financial tasks, autonomous AI agents will execute specialized responsibilities.
+
+Potential agents include:
+
+Budget Agent
+
+Savings Agent
+
+Investment Agent
+
+Subscription Agent
+
+Debt Reduction Agent
+
+Tax Preparation Agent
+
+Receipt Processing Agent
+
+Invoice Management Agent
+
+Planning Agent
+
+Financial Coach
+
+Eventually, users should be able to create custom agents and combine multiple agents into automated workflows.
+
+These agents should collaborate with one another while remaining transparent and controllable by the user.
+
+---
+
+# Financial Habit Intelligence
+
+Beyond tracking money, HABER should understand financial behavior.
+
+The platform should recognize patterns such as:
+
+Impulse purchases
+
+Lifestyle inflation
+
+Increasing subscription costs
+
+Improving savings discipline
+
+Weekend overspending
+
+Seasonal spending
+
+Unexpected behavior changes
+
+The system should generate personalized coaching rather than generic advice.
+
+Recommendations should always be backed by observable user data.
+
+---
+
+# Automation
+
+Automation should gradually reduce repetitive work.
+
+Examples include:
+
+Automatic categorization
+
+Scheduled recurring transactions
+
+Bill reminders
+
+Payment reminders
+
+Budget alerts
+
+Goal reminders
+
+Monthly summaries
+
+Weekly reports
+
+Custom automation rules
+
+Future AI-powered workflow automation
+
+---
+
+# Document Intelligence
+
+Future versions should allow users to upload:
+
+Receipts
+
+Invoices
+
+Bills
+
+Bank statements
+
+Contracts
+
+Financial documents
+
+OCR should automatically extract structured financial information and suggest transaction creation.
+
+---
+
+# Security & Privacy
+
+Financial information is highly sensitive.
+
+Trust is essential.
+
+The platform should communicate security without becoming intimidating.
+
+Users should feel confident that their data remains private and under their control.
+
+Privacy settings should be clear and easy to understand.
+
+Security should remain visible but never intrusive.
+
+---
+
+# Personalization
+
+Every user manages money differently.
+
+The interface should adapt accordingly.
+
+Examples include:
+
+Preferred dashboard widgets
+
+Currency
+
+Language
+
+Regional formatting
+
+Notification preferences
+
+Theme
+
+AI personality
+
+Financial priorities
+
+Homepage customization
+
+Frequently used actions
+
+---
+
+# Scalability
+
+The product should evolve without redesigning the entire experience.
+
+Future modules may include:
+
+Investments
+
+Insurance
+
+Loans
+
+Mortgage management
+
+Business accounting
+
+Family finance
+
+Shared budgeting
+
+Marketplace integrations
+
+Bank integrations
+
+Open Banking
+
+API integrations
+
+Plugin ecosystem
+
+Developer platform
+
+Third-party extensions
+
+The overall architecture of the user experience should already anticipate these future capabilities.
+
+---
+
+# Design Principles
+
+Every screen should communicate:
+
+Clarity
+
+Confidence
+
+Trust
+
+Precision
+
+Simplicity
+
+Intelligence
+
+Modernity
+
+Professionalism
+
+Premium quality
+
+The product should feel equally approachable for beginners while remaining powerful enough for advanced users.
+
+Users should always feel in control.
+
+AI should enhance decision-making without taking control away from the user.
+
+The final experience should resemble a premium operating system for personal finance rather than a conventional finance application.
+UI/UX AI Design Model Prompt: Project HABER
+1. Project Identity & Design Philosophy
+Brand Name: HABER
+
+Product Vision: An AI-native personal finance platform operating as a premium, intelligent financial workspace. It focuses on explaining why financial events happen and recommending what to do next, moving from manual tracking to an autonomous AI-user collaboration.
+
+Core Aesthetic Instincts: Calm, luxury, professional, and deeply trustworthy. The interface must reduce financial anxiety by presenting minimal, ultra-clean data and surfacing deep insights proactively.
+
+Visual DNA Inspiration:
+
+Marketing/Public Facing: Inspired by editorial, high-end tech-luxe brands (similar to Image 1). Features striking, large elegant serif headlines paired with minimalist, hyper-crisp geometric sans-serif body copy. Uses high-contrast dark backdrops, pill-shaped call-to-actions (CTAs), and perfectly structured border grids.
+
+Application/Dashboard Workspace: Inspired by the premium native macOS/Apple application aesthetic (similar to Image 2). Uses a distinct, structured side navigation rail, clean list hierarchies with vibrant accent highlights (e.g., Apple-style cyan/neon-blue indicator states), traffic-light window controls for a desktop-app feeling, and subtle glassmorphism overlay panels.
+
+2. Global Design System Specs
+Color Palette & Theme Modes
+Light Mode: Muted alabaster and off-white backgrounds (#F9F9FB), deep charcoal/obsidian text (#111112), cool slate gray borders, and vibrant functional accents (Apple Blue, Emerald Green for positive cash flow, Crimson for anomalies).
+
+Dark Mode: Deep obsidian/midnight backgrounds (#0B0B0C), crisp white typography (#FFFFFF), dark graphite containers, and glowing monochromatic elements alongside the vibrant accent indicators.
+
+Typography
+Headers: Elegant, high-fashion display Serif font (e.g., GT Super, Editorial New, or Times New Roman variant) for landing pages and major section headers.
+
+Interface/Body: Clean, native Sans-Serif font (e.g., SF Pro Display, Inter) for maximum data legibility, precise alignment, and structural confidence.
+
+Layout & Spacing
+Grid: Strict 12-column grid for desktop, 8-column for tablet, 4-column for mobile.
+
+Component Structure: Rounded container edges (8px to 16px border-radius), razor-thin lines, uniform outer margins, and massive negative space to maximize scannability.
+
+3. Responsive Breakpoint Paradigms
+Desktop (1440px+): Fixed full-height left navigation sidebar, multi-column dashboard layouts, split-screen workspaces for the AI Chat assistant, and comprehensive side-by-side transaction tables.
+
+Tablet (768px - 1024px): Collapsible left sidebar transforming into a compact icon rail. Two-column grids wrap dynamically into single columns. Main charts compress to emphasize key action numbers.
+
+Mobile Phone (375px - 425px): Left sidebar morphs into a bottom navigation bar or an elegant fullscreen overlay menu. Data grids stack vertically into single-column cards. Complex interactive charts switch to simple text metrics with clean micro-sparklines. All interactive elements must maintain a minimum 44x44px touch target.
+
+4. Complete Page-by-Page Information Architecture
+Generate a comprehensive, pixel-perfect design system containing the following screen flows, fully realized across Desktop, Tablet, and Mobile views for both Light and Dark modes:
+
+Module A: The Marketing & Onboarding Funnel
+1. Public Landing Page: Inspired by luxury tech (Image 1). Large, dramatic serif typography hero section ("Give your finances an AI partner"). Displays a high-fidelity visual preview of the macOS-vibe dashboard. Includes multi-column feature grids with clean custom icons, minimalist logos of supported integrations, user testimonial quote blocks, and interactive CTA pricing/onboarding buttons.
+
+2. Secure Onboarding & Bank Integration Portal: A hyper-minimalist step-by-step wizard. Clean progress bar at the top, a secure bank linkage screen powered by a premium open-banking UI, and a setup terminal to choose the user's "AI Personality" and financial priorities.
+
+Module B: The Central Application Core (macOS Vibe)
+3. Master Command Dashboard: The financial cockpit. Features a premium personalized greeting, an instant "Financial Health Score" block, a smart notification system highlighting anomalies or budget alerts, a visual cash-flow summary chart with an accompanying AI-generated text insight, and adaptive widget zones that reorder based on daily usage.
+
+4. Transaction Ledger Matrix: A dense, clean spreadsheet-style grid. Column headers for Date, Description, Account, Category, Amount, and Metadata Tags. Supports inline bulk editing, multi-select checkboxes, quick-filter pills at the top, drag-and-drop receipt attachments, and smart AI visual flags for un-categorized or pending automated transactions.
+
+5. Multi-Account Consolidated View: A visual vault of the user's net worth. Divided cleanly into liquid cash, credit cards, investments, and business/shared accounts. Uses a clean horizontal card-swipe layout on mobile and an organized split-pane list layout on desktop.
+
+6. Hierarchical Category & Budget Optimization Engine: A dual-purpose screen. On the left: a nested list of custom categories with custom icons and custom color pills. On the right: an interactive progress meter showing budget health (amount remaining vs. velocity of current spending vs. AI spending projections).
+
+7. Financial Goals & Predictive Horizons: A progress tracking suite for custom goals (e.g., Emergency Fund, Real Estate). Displays an automated calculation of the "Projected Completion Date" alongside a dedicated interactive slider letting users simulate what happens if they increase their monthly contribution.
+
+Module C: The Intelligent AI Ecosystem
+8. Advanced Financial Analytics Hub: Minimalist data visualization workspace. Clean line graphs for cash flow, trend analyses for lifestyle inflation, and dynamic subscription breakdown charts. Every chart is paired directly with an "AI Summary Box" explaining the core shift in data.
+
+9. AI Chat Workspace: A dedicated conversational UI panel. The chat features a clean thread history sidebar, clean bubble messaging interfaces, and inline rich data responses (such as interactive mini-tables, responsive bar charts, and direct action buttons like "Cancel Subscription").
+
+10. AI Autonomous Agents Control Center: A dashboard for managing background automation. Displays discrete, modular cards for the Budget Agent, Savings Agent, Subscription Agent, and Tax Agent. Shows each agent's active status, real-time log of background tasks completed, and a manual "Approval/Override" prompt toggle to keep the user in complete control.
+
+11. Habit Intelligence & Coaching Feed: A chronological feed styled like a clean premium timeline. Surfaces discovered behavioral patterns (e.g., "Weekend Impulse Spend Detected at Cafes"). Each card presents observable user data alongside a tailored, non-robotic coaching insight.
+
+12. Automation Rules & Workflow Builder: A visual "If-This-Then-That" configuration panel. Allows users to establish trigger actions, scheduled recurring transaction maps, custom bill alerts, and automation rule linkages.
+
+Module D: Document Processing & Utilities
+13. Document Intelligence & Vault: A secure interface displaying uploaded receipts, invoices, statements, and contracts. Features an active OCR extraction queue window showing how the platform scans documents and extracts structured financial transactions in real-time.
+
+14. Core Settings, Security, & Privacy Control: A clean, multi-tab settings panel. Covers Profile Management, Currency/Localization, Notification Granularity, and an intuitive, easy-to-use Privacy Switchboard highlighting data encryption states and user data control toggles.
+
+Module E: Future-Proofing & Scalability Architecture
+15. Modular Navigation Extension: The UI architecture must explicitly anticipate future expansion without requiring a redesign. Left nav rails and settings menus must include clean, grayed-out "Future Module" placeholder slots or an elegant "Add Add-ons" marketplace button.
+
+16. Ecosystem & Integration Touchpoints: Design the layouts with dedicated entry points for future feature sets, including:
+
+Wealth & Liabilities: Future slots for Investments, Insurance, Loans, and Mortgages.
+
+Collaborative Finance: Future Toggles for Business Accounting vs. Family/Shared Budgeting modes.
+
+Developer Ecosystem: An integration management dashboard mockup displaying Open Banking APIs and a Third-Party Plugin ecosystem marketplace.
+
+5. UI/UX AI Model Execution Commands & Deliverables
+System Prompt Directive for the Designer AI: Act as an elite, world-class Principal UI/UX Product Designer specializing in premium, FinTech platforms. Using the detailed Information Architecture and Design System Guidelines provided above, generate a comprehensive, high-fidelity visual design blueprint.
+
+Your final output must deliver the following explicitly:
+
+Design Tokens Matrix: A clean Markdown table specifying the exact HEX codes for the Light and Dark Mode color palette (Backgrounds, Containers, Borders, Typography, Functional Accents).
+
+Typography Scale: Precise font-family declarations, weight pairings, and responsive pixel sizes (H1 down to Micro-caption) optimized for desktop, tablet, and mobile screens.
+
+Full Responsive Wireframes/Mockups: Complete, deeply descriptive layout maps for all 16 screens listed across Modules A, B, C, D, and E.
+
+State Variations: Explicitly describe the UI state changes for each view, including Default state, Hover/Active states, Loading skeletons, Empty data states, and AI Error/Anomalous feedback states.
+
+Interactive Micro-animations: Technical descriptions of the component transitions (e.g., sidebar collapse easing, modal overlays using premium glassmorphism, and smooth scroll updates on real-time transaction streams).
+
+Ensure every single design element inherently communicates Clarity, Confidence, Trust, Precision, and Absolute Simplicity. The user must always feel completely in control, while the AI subtly enhances every decision. Proceed to generate the entire user experience now.
+
+# UI/UX DESIGN SYSTEM & INTERFACE GENERATION SPECIFICATION
+# PROJECT: HABER — Autonomous AI-Native Financial Operating System
+
+## SYSTEM ROLE & OBJECTIVE
+You are an elite, world-class Principal UI/UX Product Designer specializing in premium, highly technical, yet calm and elegant FinTech digital ecosystems. Your task is to generate a comprehensive, high-fidelity visual design blueprint and responsive interface architecture for "HABER," an AI-native financial workspace. 
+
+The product is not a basic tracker; it is an intelligent personal operating system that explains why financial events happen and automates future optimizations.
+
+---
+
+## 1. VISUAL DNA & DESIGN PHILOSOPHY
+
+### A. Core Aesthetics & Psychology
+*   **The Vibe:** Calm, luxury, professional, and deeply trustworthy. Finance is stressful; the interface must feel predictable, elegant, effortless, and reduce anxiety. Use massive negative space to avoid data overwhelm.
+*   **Public-Facing / Marketing Layouts (Inspiration: Image 1):** High-end editorial tech-luxe aesthetic. Striking, oversized, elegant serif headlines paired with ultra-clean geometric sans-serif body text. High-contrast dark backdrops, perfect structural grid-borders, pill-shaped call-to-actions (CTAs), and minimalist integrations grids.
+*   **Application / Workspace Layouts (Inspiration: Image 2):** Native Apple/macOS desktop application environment. Full-height left side navigation rail, crisp lists, traffic-light window control micro-details, subtle glassmorphism overlay panels, and vibrant custom functional accents (such as a distinct Apple-style neon-cyan indicator state for active items).
+
+### B. Color Palette & Theme Engine
+*   **Light Mode:** Muted alabaster backgrounds (`#F9F9FB`), deep obsidian/charcoal typography (`#111112`), cool slate gray borders, and vibrant functional accents (Apple Neon Blue for selections, Emerald Green for positive cash flow, Crimson for anomalies/alerts).
+*   **Dark Mode:** Deep obsidian/midnight canvas (`#0B0B0C`), crisp white typography (`#FFFFFF`), dark graphite structural containers, with glowing monochromatic indicators and the same sharp functional accents.
+
+### C. Typography Scale
+*   **Headers/Display:** Premium editorial display Serif (e.g., GT Super / Editorial New variant) used exclusively for marketing heroes, main section titles, and narrative AI insights.
+*   **Interface/Data UI:** High-legibility Sans-Serif (e.g., SF Pro Display / Inter) used for tables, metrics, forms, navigational elements, and dense financial data points.
+
+---
+
+## 2. RESPONSIVE PARADIGMS
+
+*   **Desktop (1440px+):** Fixed full-height left navigation sidebar rail. Dynamic multi-column dashboards, multi-pane split screens for the side-by-side AI Chat workspace, and dense horizontal spreadsheet-style transaction tables.
+*   **Tablet (768px - 1024px):** Collapsible left sidebar transforming into a compact icon-only rail. Multi-column grids elegantly wrap into single columns. Complex data charts compress to highlight key core metric callouts.
+*   **Mobile Phone (375px - 425px):** Left navigation sidebar morphs into a premium bottom bar or a full-screen minimalist overlay menu. Data grids and tables stack vertically into clean cards. Complex charts convert to simple typographic text metrics with accompanying micro-sparklines. Minimum touch target size: 44x44px.
+
+---
+
+## 3. COMPREHENSIVE PAGE-BY-PAGE INFORMATION ARCHITECTURE
+
+Generate distinct, high-fidelity layouts for both Light and Dark modes across all responsive breakpoints for the following 16 screens:
+
+### MODULE A: THE MARKETING & ONBOARDING FUNNEL
+*   **Screen 1: Public Landing Page (Tech-Luxe Editorial Style):** Features a massive serif hero headline ("Give your financial life an AI agent"). Minimalist navigation header with a pill-shaped "Get Started" CTA. A prominent, high-fidelity visual presentation slot showcasing the macOS-vibe dashboard. Includes multi-column benefit grids, integrated partner logos (Uber, DoorDash, etc.) rendered in clean monochromatic styling, user testimonial grids, and a final premium conversion panel.
+*   **Screen 2: Secure Onboarding & Bank Connection Portal:** A hyper-minimalist wizard step. Features a top micro-progress timeline indicator. Main container presents a highly secure, clean linkage screen for Open Banking (Plaid-style integration), followed by an interactive onboarding questionnaire to calibrate user priorities and select their "AI Personality."
+
+### MODULE B: THE CENTRAL WORKSPACE CORE (macOS VIBE)
+*   **Screen 3: Master Command Dashboard:** The cockpit. Displays a personalized native greeting with a premium "Financial Health Score" metric visualization. Includes an urgent notification banner highlighting daily changes, anomalies, or budget health alerts. Features a fluid cash-flow chart paired with an explicit, readable AI-generated plain-English performance text summary block.
+*   **Screen 4: Advanced Transaction Matrix:** A dense, elegant spreadsheet layout. Columns must seamlessly display: Date, Description, Account, Category, Metadata Tags, Attachments (Receipt Icons), and Amount. Features include quick-filter pill toggles at the top, a multi-select checkbox layout for bulk editing, inline modification fields, and custom UI icons showing automatic AI classification states.
+*   **Screen 5: Multi-Account Consolidated Vault:** A unified visual summary of total net worth. Structured as elegant asset cards separated into distinct categories: Liquid Checking/Savings, Credit Cards, Digital Wallets, Investment Portfolios, and Shared/Business Accounts.
+*   **Screen 6: Hierarchical Category & Budget Optimization Engine:** A split-screen interface. Left side: Nested, expandable lists of custom categories with assigned custom color dots and micro-icons. Right side: Interactive horizontal budget velocity meters showing amount spent versus remaining cash runway, accompanied by an AI recommendation card suggesting manual budget modifications based on spending history.
+*   **Screen 7: Financial Goals & Predictive Horizons:** Dedicated tracking boards for long-term targets (Emergency Fund, Real Estate, Debt Repayment). Each goal card displays a clear "Projected Completion Date" calculated from real-time behavior, complete with an interactive forecasting slider.
+
+### MODULE C: THE INTELLIGENT AI ECOSYSTEM
+*   **Screen 8: Advanced Financial Analytics Hub:** Minimalist data viz dashboard. Clean, non-cluttered charts displaying Income/Expense trends, Cash Flow Analysis, Net Worth progression, Subscription/Recurring Cost breakdowns, and Lifestyle Inflation metrics. Every major chart must be anchored by an elegant drop-down card containing an AI-authored narrative analysis explaining the data trends.
+*   **Screen 9: Interactive AI Chat Workspace:** A native side-by-side split screen or dedicated panel. Features an left thread-history index rail, an elegant chat text input console, and rich chat bubble interactions. The AI responses must not be plain text—they must render inline UI components like miniature comparison tables, responsive column charts, and contextual buttons (e.g., "Approve Budget Adjustment" or "Cancel Subscription").
+*   **Screen 10: Autonomous AI Agents Control Center:** A command dashboard managing background automation workflows. Must present 10 distinct, beautifully structured component cards representing specialized autonomous agents:
+    1. *Budget Agent*
+    2. *Savings Agent*
+    3. *Investment Agent*
+    4. *Subscription Agent*
+    5. *Debt Reduction Agent*
+    6. *Tax Preparation Agent*
+    7. *Receipt Processing Agent*
+    8. *Invoice Management Agent*
+    9. *Planning Agent*
+    10. *Financial Coach*
+    Each card must explicitly render an active pulse status, a log feed of background tasks completed, and a prominent user permission/override toggle switch to guarantee user control.
+*   **Screen 11: Habit Intelligence & Coaching Timeline:** A clean chronological vertical feed displaying discovered spending and behavioral patterns (e.g., "Weekend Impulse Spending detected," "Subscription Cost Creep identified"). Cards feature a micro-chart of the underlying source data paired with actionable personal coaching text.
+*   **Screen 12: Automation Workflow Builder:** A visual automation canvas mapping custom financial rules. Employs clean "If-This-Then-That" statement blocks to control automated transfers, rule-based category tagging, conditional alert triggers, and smart recurring payment workflows.
+
+### MODULE D: DOCUMENT INTELLIGENCE & INFRASTRUCTURE
+*   **Screen 13: Document Vault & Live OCR Scan Queue:** A split secure layout. Left side: A categorized document folder system for receipts, invoices, statements, and contracts. Right side: A real-time, active processing window showing an uploaded document undergoing visual OCR text extraction, complete with an inline preview of data turning into a structured transaction entry.
+*   **Screen 14: Core Settings, Security & Privacy Control:** A clean multi-tab preferences suite. Includes sections for Profile Details, Currency/Localization formats, and Notification Granularity. Features an explicit, highly visual "Privacy Switchboard" that maps out end-to-end data encryption statuses alongside absolute user data access control toggles.
+
+### MODULE E: FUTURE-PROOFING & EXPANSION
+*   **Screen 15: Scalable Navigation Framework:** The primary navigation system must display disabled placeholder menu tabs or minimalist "Add Extension" modules to cleanly signal where upcoming features will plug in without disrupting the core design grid.
+*   **Screen 16: Integration & API Ecosystem Marketplace:** A clean grid ecosystem directory layout showcasing Open Banking APIs, connected developer plugins, and upcoming expansion integrations (e.g., Insurance Portals, Mortgage Managers, Shared Family Finance spaces).
+
+---
+
+## 4. UI STATE VARIATIONS & TECHNICAL DELIVERABLES
+
+For every single layout generated, you must explicitly visualize and account for the following component states:
+1.  **Default State:** Pristine UI populated with clean, well-balanced sample financial data.
+2.  **Hover / Active State:** Highlighted row feedback, button transformations, and active selection states utilizing the signature neon-cyan indicator color.
+3.  **Loading Skeleton State:** Clean, shimmering neutral block structures for asymmetric content loading.
+4.  **Empty Data State:** Minimalist placeholder graphics paired with clear instructions helping users add data.
+5.  **Anomalous / Error Feedback State:** Eye-catching but non-alarmist warning micro-components using subtle red highlights to call out unusual spending behavior or processing errors.
+
+Execute the entire user experience design sequence across all specified modules now.
