@@ -17,7 +17,7 @@ class task_repo_impl(task_repository):
             return {
                 "status": "success",
                 "message": "task created",
-                "data": task
+                "data": task.to_entity()
             }
 
         except Exception as e:
@@ -87,7 +87,7 @@ class task_repo_impl(task_repository):
 
     def list_tasks(self) -> tasks_list:
         try:
-            pending : task_ORM = (
+            pending : list[task_ORM] = (
                 self.session.query(task_ORM)
                 .filter(task_ORM.completed == False)
                 .all()

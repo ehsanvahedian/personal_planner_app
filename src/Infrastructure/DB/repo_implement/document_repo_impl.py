@@ -17,7 +17,7 @@ class document_repo_impl(document_repository):
             return {
                 "status": "success",
                 "message": "document created",
-                "data": doc
+                "data": doc.to_entity()
             }
 
         except Exception as e:
